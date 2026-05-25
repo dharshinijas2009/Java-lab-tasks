@@ -1,0 +1,74 @@
+package java_fundamentals;
+
+	public class Deva {
+
+		public static void main(String[] args) 	{			
+// arithmetic operators
+//	1.note book total
+		int a = 45;
+		int b = 75;
+		int c = 100;
+		int tot = a+b+c;
+		System.out.println("Total notebook price:"+tot);
+		
+//2.pen toatl price
+		int a = 50;
+		int b = 90;
+		int c = 75;
+		int tot = a+b+c;
+		System.out.println("Total price of the pen:"+tot);
+
+//3.avg
+		int a = 100;
+		int b = 95;
+		int c = 80;
+		int avg  = (a+b+c)/3;	
+		System.out.println("Average:"+avg);
+
+//4.pizza cost
+		int a = 250;
+		int tot = a*4;
+		System.out.println("TOtal price for 4 piizzas:"+tot);
+
+//5.salary 
+		int a = 800;
+		int tot = 30*a;
+		System.out.println("TOtal salary:"+tot);
+		
+//6.mileage
+		int k = 150;
+		int a = 5;
+		int b = 150/5;
+		System.out.println("Kilometer:"+k);
+		System.out.println("petrol:"+a);
+		System.out.println("Milege:"+b);
+
+//7.mobile price
+		int a = 15000;
+		double b = 0.18*a;
+		double tot = b+a;
+		System.out.println("Total price of the mobile:"+tot);
+		
+//8.balance amt
+		int a = 500;
+		int b = 320;
+		int rem = a-b;
+		System.out.println("TOtal:"+a);
+		System.out.println("spent:"+b);
+		System.out.println("Remaing amount:"+rem);
+		
+//9.saving
+		int a = 25000;
+		int b = 18000;
+		int save = a-b;
+		System.out.println("Monthly income:"+a);
+		System.out.println("Expenses:"+b);
+		System.out.println("Saving:"+save);
+		
+//10.garden area
+		int l = 20;
+		int b = 10;
+		int area = l*b;
+		System.out.println("area of rectangled garden:"+area);
+		}	 
+ }
