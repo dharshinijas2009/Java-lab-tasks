@@ -1,0 +1,96 @@
+package java_fundamentals;
+
+public class Deva {
+
+	public static void main(String[] args) {
+//		operators task
+//1.AVERAGE OF THREE NUM
+		int a = 10;
+		int b = 20;
+		int c = 30;
+		int tot = a+b+c;
+		int avg = tot/3;
+		System.out.println("Total:"+tot);
+		System.out.println("The average of three numbers is:"+avg);
+		
+//2.area of circle,square,triangle
+//	circle
+		float pi = 3.14f;
+		int r = 100;
+		float area = pi*(r*r);
+		System.out.println("Area of circle:"+area);
+// square
+		byte a1 = 55;
+		byte b1 = 4;
+		int area1 = a1*b1;
+		System.out.println("Area of square:"+area1);
+// triangle
+		byte b = 12;
+		byte h = 6;
+		int area = (b*h)/2;
+		System.out.println("Area of triangle:"+area);
+
+//3.celsious to fahrenheit
+		float c = 25f;
+		float f = (1.8f*c)+32;
+		System.out.println("celsious:"+c);
+		System.out.println("Fahrenheit:"+f);
+
+//4.Fahrenheit to celsious:
+		float F = 32f;
+		float C = (F-32)*0.5f;
+		System.out.println("Fahrenheit:"+F);
+		System.out.println("Celsious:"+C);
+		
+//5.simple interest
+	 int p = 4900;
+	 float r = 0.02f;
+	 int t = 3;
+	 float a = p*r*t;
+	 System.out.println("Simple intrest:"+a);
+		
+//6. compound interest
+	int p = 5000;
+	float r = 0.092f;
+	int n = 2;
+	float A = (1+r);
+	double p1 = Math.pow(A,2);
+	double aa = p*p1;
+	System.out.println("Compoun interest:"+aa);
+	
+// 7.swapping of 2 num using tem variable
+		int a = 1;
+		int b = 2;
+		int c = 0;
+		System.out.println("value of a:"+a);
+		System.out.println("value of b:"+b);
+		c=a;
+		a=b;
+		b=c;
+		System.out.println("After swapping:");
+		System.out.println("value of a:"+a);
+        System.out.println("Value of b:"+b);
+		
+//8.swap without variable
+		int a = 10;
+		int b = 20;
+		System.out.println("value of a:"+a);
+		System.out.println("value of b:"+b);
+		a = a+b;
+		b = a-b;
+		a = a-b;
+		System.out.println("After swapping:");
+		System.out.println("value of a:"+a);
+        System.out.println("Value of b:"+b);
+
+//9.square root 
+		float a = 144.2f;
+		double b = Math.sqrt(a);
+		System.out.println("Squareoot of 144.2 is:"+b);
+		
+// 10.last digit
+		int a = 125;
+		int b = 125%10;
+		System.out.println("LAst digit:"+b);}
+
+}
