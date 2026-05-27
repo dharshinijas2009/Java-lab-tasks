@@ -1,0 +1,102 @@
+package java_fundamentals;
+
+	public class Deva {
+
+		public static void main(String[] args) {
+	
+//assignment operator
+//1.book amt		
+				int a = 500;
+			int b = 120;
+            System.out.println("Total amount:"+a);
+            System.out.println("Book price:"+b);
+            System.out.println("Remaining amount"+(a-=120));
+			
+//2.salary
+			int a = 2000;
+			int b = 90000;
+			System.out.println("Normal salary:"+b);
+			System.out.println("Bonus:"+a);
+			System.out.println("Updated Salary:"+(b+=a));
+
+//3.water
+			int a = 100;
+			int b = 20;
+			System.out.println("Initial amount of water:"+a);
+			System.out.println("amount of water added:"+b);
+			System.out.println("total amount of water:"+(a+=b));
+			
+//4.battery
+			int a = 80;
+			int b = 15;
+			System.out.println("current charge level:"+a+"%");
+			System.out.println("amount of charge used:"+b+"%");
+			System.out.println("remaing battery:"+(a-=b)"%");
+			
+//5.savings
+			int a = 1500;
+			System.out.println("Initial savings:"+a);
+			System.out.println("doubled saving:"+(a*=2));
+			
+//Logical operator
+//6.std attendance
+			int a = 90;
+			String b ="Fees paid";
+			System.out.println("Attendance:"+a);
+			System.out.println("You have paid the fees..");
+			System.out.println(a>=75<100 && b =="Fees paid"+"You can write the exam");
+
+//7.user login
+			String a = "Devadharshini";
+			String b = "devadharshinijas@gmail.com";
+	System.out.println(a == "Devadharshini" && b == "devadharshinijas@gmail.com"+"You can login..");
+
+//8.theatre
+	int age = 17;
+	String b = "Available";
+	Boolean c = age >=18 && b == "Available";
+	System.out.println(c+":You are can't watch the movie");
+			
+//9.num bw 1 to 100
+			int a = 23;
+			int b = 16;
+			int c = 2316;
+			System.out.println(1 < a && a < 100);
+			System.out.println(1<b && b<100);
+			System.out.println(1<c &&  c<100);
+			
+//10.placement
+			String a = "Aptitude cleared";
+			String b = " not Tech cleared";
+			Boolean ce = a == "Aptitude cleared" && b == "Tech cleared";
+			System.out.println(ce+":Sorry!better luck next time");
+	
+//Bitwise operator
+//11.AND
+			int	a1 = 12;
+		    int b1 = 13;
+		    int c,d;
+		    c=22;
+		    d=33;
+		    System.out.println(a1 & b1);
+			System.out.println(c & d );
+			
+//12.	OR
+			int a = 123;
+			int b = 225;
+			int c = 12;
+			byte d = 127; 
+			System.out.println(a|b);
+			System.out.println(c|d);
+					
+//13.XOR
+			int a = 123;
+			int b = 225;
+			int c = 12;
+			byte d = 127; 
+			System.out.println(a^b);
+			System.out.println(c^d);
+			
+//
+			}
+	}
