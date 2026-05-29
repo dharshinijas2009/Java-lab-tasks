@@ -1,0 +1,157 @@
+package java_fundamentals;
+
+public class control_statements {
+
+	public static void main(String[] args) {
+//	conditional st
+// 1. m>n quotient and rem
+ int a = 99;
+ int b = 11;
+ if (a>b) {
+	 System.out.println("Quotient:"+(a/b));
+	 System.out.println("Remainder:"+(a%b));
+	}
+		
+//2.grade
+ int a,b,c,d,e;
+ a = 99;
+ b = 92;
+ c = 100;
+ d = 100;
+ e = 100;
+ int tot = a+b+c+d+e;
+ int avg = tot/5;
+ System.out.println("Your total:"+tot);
+ System.out.println("Your avg:"+avg);
+ if (avg >0 && avg >=90) {
+	 System.out.println("YOur grade:A");}
+ else if (avg>=75 && avg <90) {
+	 System.out.println("Your grade:B");}
+ else if (avg >=35 && avg < 75) {
+	 System.out.println("your grade:C");}
+ else {
+	 System.out.println("You are fail!");
+	 }; 
+
+//3. +ve /-ve
+int a = -10;
+if (a>0) {
+	System.out.println(a+" is positive..");
+}
+else {System.out.println(a+" is negative..");};
+	 
+// 0dd or even
+int b = 299;
+if (b%2 == 0) {
+	System.out.println(b+" is even..");
+}
+else {
+	System.out.println(b+" is odd..");
+};
+
+//	 pass or fail
+int mark = 25;
+if (mark < 35) {
+	System.out.println("Oops! You are fail..");
+}
+else {
+	System.out.println("Congrats you have passed!");
+	
+};
+
+//	4. vowel or consonant
+char w = 'A';
+if (w == 'A'|| w=='a' || w =='e'|| w == 'E'|| w == 'I'|| w == 'i'|| w == 'O'|| w == 'o'|| w == 'U'|| w =='u') {
+	System.out.println("It is vowel");
+}
+else {
+	System.out.println("It is a consonant");
+}
+ 
+// 5.maximum of three
+int a,b,c;
+a = 12;
+b = 3;
+c = 200;
+if (a>b && a>c) {
+	System.out.println(a+"is the max num");
+}
+else if (b>a && b >c) {
+	System.out.println(b+"is the maax num");
+}
+else {
+	System.out.println(c+" is the max num");
+};
+
+//minimum
+int a,b,c;
+a = 12;
+b = 3;
+c = 200;
+if (a<b && a<c) {
+	System.out.println(a+"is min num");
+}
+else if (b<a && b<c) {
+	System.out.println(b+" is min num");
+}
+else {
+	System.out.println(c+"is min num");
+};
+
+//6.month and season
+String mon = "September";
+if (mon == "December"||mon == "January"|| mon == "February") {
+	System.out.println(mon+" is Winter...❄⛄");
+}
+else if (mon == "March"||mon=="April"||mon=="May") {
+	System.out.println(mon+" is spring..🌸");
+}
+else if (mon=="September"|| mon =="October" || mon =="November"){
+	System.out.println(mon+" is Autumn🍂");
+}else {
+	System.out.println(mon+" is Summer🌞");
+}
+//7.find no.of days
+String mon = "September";
+if(mon=="February") {
+	System.out.println("If leap year it has 29 days");
+	System.out.println("If itsn't a leap year it has 28 days");
+	}
+else if(mon =="January"||mon=="March"||mon=="May"||mon=="July"||mon=="August"||mon=="October"||mon=="December"){
+System.out.println(mon +" has 31 days");
+}
+else{
+	System.out.println(mon+" has 30 days");
+}; 
+//8.print  hello and bye
+int a = 900;
+if (a%5==0) {
+	System.out.println("Hello!..");
+}
+else {
+	System.out.println("Bye...");
+};
+//9.boilin or not
+int a = 120;
+if(a>100) {
+	System.out.println("Yes!The water is boiling");
+}
+else {
+	System.out.println("The water is not boiling");
+};
+		
+//10.library
+int d = 12;
+if(d<=5) {
+	System.out.println("charge:"+(d*2));
+}
+else if(d>6&& d<=10) {
+	System.out.println("charge:"+(d*3));
+}
+else if(d>=11 && d<=15) {
+	System.out.println("Charge:"+(d*4));
+}
+else {
+	System.out.println("charge:"+(d*5));
+};	}
+}
