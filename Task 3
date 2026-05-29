@@ -155,3 +155,52 @@ else {
 	System.out.println("charge:"+(d*5));
 };	}
 }
+//second set
+//1.voting
+int age = 17;
+if (age>=18) {
+	System.out.println("You can vote");
+}
+else {
+	System.out.println("You can't vote");
+}
+
+//2.div by both 3 and 5		
+int a = 30;
+if(a%3==0&& a%5==0) {
+	System.out.println("It is div by both 3 and 5");
+}
+else {
+	System.out.println("It is not div by both 3 and 5");
+}
+
+//3.salary and bonus
+int b = 90000;
+int a = 95000;
+System.out.println("Your  normal salary:"+b);
+System.out.println("This month your salary:"+a);
+if(a>90000) {
+	System.out.println("Yes!you are getting bonus");
+}
+else {
+	System.out.println("You are not getting bonus");
+}
+
+//4.bel or above avg
+int a = 90;
+if(a>=80 && a<=100) {
+	System.out.println("You are above average");
+}
+else {
+	System.out.println("You are below average");
+}
+
+//5.largest of two
+int a = 12;
+int b = 55;
+if (a>b) {
+	System.out.println(a+" is largest");
+}
+else {
+	System.out.println(b+" is largest");
+}
