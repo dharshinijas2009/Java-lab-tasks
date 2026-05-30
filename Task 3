@@ -204,3 +204,137 @@ if (a>b) {
 else {
 	System.out.println(b+" is largest");
 }
+//6. electricity bill
+int a = 1000;
+if(a>0 && a<=100) {
+	System.out.println("NO charges");
+}
+else if(a>100 && a<=300) {
+	System.out.println("Charge:"+(a*5.16));
+}
+else if(a>300 && a<=500) {
+	System.out.println("Charge:"+(a*6.39));
+}
+else if(a>500 && a<=800) {
+	System.out.println("Charge:"+(a*7.72));
+}
+else if(a>800 && a<=1000) {
+	System.out.println("Charge:"+(a*7.97));
+}
+else {
+	System.out.println("enter valid unit");};
+
+		
+//7.div by 2,4
+int a = 16;
+if (a%2==0) {
+	System.out.println("It is div by 2");
+	if (a%4==0) {
+		System.out.println("It is div by 4");
+		System.out.println("It is div by both 2 and 4");}
+	else {
+		System.out.println("It is not div by 4");}
+ }
+
+//8.driving license
+int age = 25;
+if (age>18) {
+	System.out.println("You can apply for driving license");
+}
+else {
+	System.out.println("You can't apply for driving license");
+}
+		
+//9.shopping and discount
+int amt = 2000;
+if(amt<500) {
+	System.out.println("NO discount");
+}
+else if (amt >= 500 && amt<1000){
+	System.out.println("yo have 20% discount");
+}
+else if ( amt >=1000 && amt<1500) {
+	System.out.println("You have 40% discount");
+}
+else if (amt>=1500) {
+	System.out.println("You have 60 % discont");};	
+
+//10.	triangle and angle
+float a = 20.5f;
+int b = 60;
+float c = 95.5f;
+if(a+b+c==180){
+	System.out.println("It is a prfect triangle");
+}
+else {
+	System.out.println("It isn't a perfect triangle");
+}
+//11.distinction
+int a = 95;
+if (a>=90 && a<=100) {
+	System.out.println("You have passed in distinction");
+}
+else if(a>=80) {
+	System.out.println("You have passed in First class");
+}
+else if(a>=70 && a<80) {
+	System.out.println("You have passed in second class");
+}
+else if(a>=40 && a<70) {
+	System.out.println("you have passed in third class");
+}
+else {
+	System.out.println("YOu are fail");
+}
+		
+//12. greater or less or = 100
+int a = 600;
+if(a>100) {
+	System.out.println("Greater than 100");
+}
+else if ( a <100) {
+  System.out.println("Less than hundred");
+}
+else if (a==100) {
+	System.out.println("Equal  to hundred");
+}
+		
+//13. week day or week end
+int a = 7;
+if(a==1 || a==7) {
+	System.out.println("It is a weekend🥳");
+}
+else {
+	System.out.println("It is a weekday😒");
+}
+		
+//14.speed
+int a = 100;
+System.out.println("Speed limit:60 Km/hr");
+System.out.println("Your speed:"+a);
+if(a>80) {
+	System.out.println("You are exceeding the speed limit");
+}
+		
+//15.minimum balance
+int a = 5000;
+if(a>1000) {
+	System.out.println("Your minimum balance is maintained");
+}
+else {
+	System.out.println("YOur minimum balance is not maintained");
+}
+
+//16.ticket price
+String c = "Children";
+if(c == "Children") {
+	System.out.println("Discount 10 %:"+(200*(10.0/100)));
+}
+else if(c=="Adults") {
+	System.out.println("Normal price:200");
+}
+else {
+	System.out.println("Special discount 20%:"+(200*(20.0/100)));
+}
+  }
+	}
