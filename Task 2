@@ -97,6 +97,39 @@ package java_fundamentals;
 			System.out.println(a^b);
 			System.out.println(c^d);
 			
-//
+//14.left shift
+int a = 56;
+System.out.println(a<<2);
+
+//15.right shift
+int b = 32;
+System.out.println(b>>2);
+
+//		conditional operator
+//16.		pass or fail
+int a = 40;
+String b = (a>=35)?"You are pass":"You are fail";
+System.out.println("YOur result:"+b);
+		
+//17.older
+int a = 18;
+int b = 20;
+String ans = (a>b)?a+" year old girl is elder":b+" year old girl is elder";
+System.out.println(ans);
+		
+//18.discount
+int a = 1000;
+String dis = (a>500)?"Discount applied":"Discount not applied";
+System.out.println(dis);
+
+//19.+ve or - ve
+int a = -200;
+String aa = (a<0)?a+" it is negative":a+" it is positive";
+System.out.println(aa);
+		
+//20.century
+int a = 98;
+String b = (a==100)?"Yeah!It is century":"Oops!It isn't century";
+System.out.println(b);	
 			}
 	}
