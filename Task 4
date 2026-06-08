@@ -1,0 +1,196 @@
+package java_fundamentals;
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+public class Scann {
+
+	public static void main(String[] args) {
+//SCANNER TASKS
+//1.Student details
+Scanner scan = new Scanner(System.in);
+System.out.print("Std name:");
+String name = scan.nextLine();
+System.out.print("Std Age:");
+byte age = scan.nextByte();
+scan.nextLine();
+System.out.print("Std Department:");
+String dep = scan.nextLine();
+System.out.println("Name:"+name);
+System.out.println("Age:"+age);
+System.out.println("Department:"+dep);
+		
+//2.Mobile purchase
+Scanner scan = new Scanner(System.in);
+System.out.print("Mobile name:");
+String name = scan.nextLine();
+System.out.print("Price:");
+int price = scan.nextInt();
+scan.close();
+System.out.println("Mobile name:"+name);
+System.out.println("Price:"+price);
+
+//3.Employee info
+Scanner scan = new Scanner(System.in);
+System.out.print("Emloyee name:");
+String name = scan.nextLine();
+System.out.print("Emoloyee ID:");
+int id = scan.nextInt();
+System.out.print("Employee salary:");
+int sal = scan.nextInt();
+System.out.println("Emloyee name:"+name);
+System.out.println("Emoloyee ID:"+id);
+System.out.println("Emloyee name:"+sal);
+
+//4.College admission
+Scanner scan = new Scanner(System.in);
+System.out.print("Std name:");
+String name = scan.nextLine();
+System.out.println("Your 10th mark:");
+int mark = scan.nextInt();
+System.out.println("Your 12th mark:");
+int m = scan.nextInt();
+System.out.println("Name:"+name);
+System.out.println("10th mark:"+mark);
+System.out.println("12th mark:"+m);
+
+//5.Product Billing
+Scanner scan = new Scanner(System.in);
+System.out.print("Product name:");
+String name = scan.nextLine();
+System.out.print("Ouantity:");
+byte q = scan.nextByte();
+System.out.print("Price:");
+int price = scan.nextInt();
+System.out.print("Total amount:"+(q*price));
+
+//SWITCH CASE TASK
+//1.Week days
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter the number of a day: ");
+byte num = scan.nextByte();
+switch(num){
+	case 1:System.out.println(num+" is Sunday");break;
+	case 2:System.out.println(num+" is Monday");break;
+	case 3:System.out.println(num+" is Tuesday");break;
+	case 4:System.out.println(num+" is Wednesday");break;
+	case 5:System.out.println(num+" is Thursday");break;
+	case 6:System.out.println(num+" is Friday");break;
+	case 7:System.out.println(num+" is Saturday");break;
+	default:System.out.println("Enter a valid number...");}
+	
+
+//2.ATM
+ Scanner a = new Scanner(System.in);
+ System.out.println("Enter a num:");
+ byte b = a.nextByte();
+ switch(b) {
+ case 1:System.out.println("Withdraw  amount");break;
+ case 2:System.out.println("Deposit the amount");
+ default:System.out.println("No other options..");
+ }
+
+//3.Course selection
+Scanner a = new Scanner(System.in);
+System.out.print("Enter a num:");
+int course  = a.nextInt();
+switch(course) {
+case 1:System.out.println("Welcome to CSE dept.");break;
+case 2:System.out.println("Welcome to CSE(AIML)");break;
+case 3:System.out.println("Welcome to ECE dept.");break;
+case 4:System.out.println("Welcome to EEE dept.");break;
+case 5:System.out.println("Welcome to Chemical Engineering dept.");break;
+default:System.out.println("Enter a valid number..");
+}
+
+//4.food menu
+Scanner a = new Scanner(System.in);
+System.out.print("Enter a num:");
+int food = a.nextInt();
+switch(food) {
+case 1:System.out.println("Veg biriyani");break;
+case 2:System.out.println("Chicken biriyani");break;
+case 3:System.out.println("Nan with Chicken gravy");break;
+case 4:System.out.println("Fish fry");break;
+case 5:System.out.println("Dhal sambar with potato fry");break;
+default:System.out.println("ENter a vaid num...");
+}
+
+//5.arithmetic operations
+Scanner a = new Scanner(System.in);
+System.out.println("Enter a operator: ");
+System.out.println("Enter a num:");
+System.out.println("Enter a num:");
+byte op = a.nextByte();
+byte x = a.nextByte();
+byte y = a.nextByte();
+switch(op) {
+case 1:System.out.println("Add:"+(x+y));break;
+case 2:System.out.println("Sub:"+(x-y));break;
+case 3:System.out.println("Multiplication:"+(x*y));break;
+case 4:System.out.println("Division:"+(x/y));break;
+case 5:System.out.println("Pow:"+(Math.pow(x, y)));break;
+default:System.out.println("Not a vaild operator");
+}
+
+//FOR LOOP TASKS
+//1.print num 1 to 20
+for(int i=1;i<=20;i++) {
+	System.out.print(i+" ");
+}
+
+//2.even num 2 to 20
+for(int i = 2;i<=20;i+=2) {
+	System.out.print(i+" ");
+}
+
+//3.odd num 1 to 25
+for(int i = 1;i<=25;i+=2) {
+	System.out.print(i+" ");
+}
+
+//4.multiplication table
+Scanner a = new Scanner(System.in);
+System.out.println("Enter the table:");
+byte num = a.nextByte();
+for(int i = 1;i<=10;i++) {
+	System.out.println(i+"*"+num+"="+(i*num));
+}
+
+//5.sum of natural numbers
+int sum = 0;
+for(int i=1;i<=100;i++) {
+	sum = sum+i;
+}
+System.out.println("Total sum:"+sum);
+
+//6.Square of a number 1 to 10
+for(int i=1;i<=10;i++) {
+	System.out.print(i+(":"+i*i+" "));
+}
+
+//7.num from 20 to 1
+for(int i=20;i>=1;i--) {
+	System.out.println(i+"  ");
+}
+
+//8.multiples of 5
+for(int i = 5;i<=100;i+=5) {
+	System.out.print(i+" ");
+}
+
+//Mini real world problem
+Scanner a = new Scanner(System.in);
+System.out.println("Enter a num:");
+byte ch = a.nextByte();
+switch(ch) {
+case 1:System.out.println("Brand:Samsung"+" 10% off");break;
+case 2:System.out.println("Brand:Vivo"+" 20% off");break;
+case 3:System.out.println("Brand:Motorola g54"+" 30% off");break;
+case 4:System.out.println("Brand:Iqneo6"+" 40% off");break;
+case 5:System.out.println("Brand:iphone"+" 50% off");break;
+default:System.out.println("ENter a valid num...");
+
+}	
+
+	}
+
+}
