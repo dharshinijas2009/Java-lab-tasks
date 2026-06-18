@@ -1,0 +1,203 @@
+package java_fundamentals;
+
+import java.util.Scanner;
+
+public class learn_strings {
+
+	public static void main(String[] args) {
+//STRING TASKS
+//1.name and welcome
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a name:");
+String name = scan.nextLine();
+System.out.println(name+",Welcome!!");
+		
+//2.no.of.characters
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a name:");
+String name = scan.nextLine();		
+System.out.println("Total no.of.characters");	
+System.out.println(name.length());
+		
+//3.display first character
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a name:");
+String name = scan.nextLine();		
+System.out.println ("First character");		
+System.out.println(name.charAt(0));
+
+//4.display the lst character
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a name:");
+String name = scan.nextLine();		
+System.out.println ("Last character");
+int a = name.length();
+System.out.println(name.charAt(a-1));
+
+//5.uppercase
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a name:");
+String name = scan.nextLine();
+String a = name.toUpperCase();
+System.out.println("Name in uppercase:"+a);
+		
+//6.lowercase
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a city name:");
+String name = scan.nextLine();
+String a = name.toLowerCase();
+System.out.println("City name in lowercase:"+a);
+
+//7.name starts with 'p'
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a  name:");
+String name = scan.nextLine();
+Boolean a = name.startsWith("P");
+if(a==false) {
+	System.out.println("False!it doesn't starts with 'P'");
+}
+else {
+	System.out.println("True!it starts with 'P'");
+}
+		
+//8.name endswith 'n'
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a  name:");
+String name = scan.nextLine();
+Boolean a = name.endsWith("n");
+if(a==false) {
+	System.out.println("False!it doesn't ends with 'n'");
+}
+else {
+	System.out.println("True!it ends with 'n'");
+}
+//9.equal
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a  name:");
+String name1 = scan.nextLine();
+System.out.print("Enter a name:");
+String name2 = scan.nextLine();
+Boolean a = name1.equalsIgnoreCase(name2);
+if(a==false) {
+	System.out.println("They are not equal");
+}
+else {
+	System.out.println("They are  equal");
+}
+		
+//10.compare strings
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a  string:");
+String name1 = scan.nextLine();
+System.out.print("Enter a string:");
+String name2 = scan.nextLine();
+int a = name1.compareToIgnoreCase(name2);
+if(a==0) {
+	System.out.println("The two strings have same no.of character");
+}
+else {
+	System.out.println("The two strings doesn't have same no.of character");
+}
+
+//11.email
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your e-mail:");
+String name1 = scan.nextLine();
+Boolean a = name1.contains("@");
+if(a == false) {
+	System.out.println("Your e-mail doesn't have @");
+}
+else {
+	System.out.println("Your e-mail have @");
+}
+
+//12.gmail
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your e-mail:");
+String name1 = scan.nextLine();
+Boolean a = name1.contains("gmail.com");
+if(a == false) {
+	System.out.println("Your e-mail doesn't have gmail.com");
+}
+else {
+	System.out.println("Your e-mail have gmail.com");
+}
+		
+//13.position of @
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your e-mail:");
+String name1 = scan.nextLine();		
+System.out.println(name1.indexOf("@")+" is the index of '@'");	
+
+//14.strip
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a  string:");
+String name1 = scan.nextLine();
+System.out.println("After removing spaces");
+System.out.println(name1.strip());
+		
+//15.replace
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter a  string:");
+String name1 = scan.nextLine();
+System.out.println("After replacing a with @");
+System.out.println(name1.replace("a","@"));
+		
+//16.mobile number - 10 digits
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your mobile number:");
+String num = scan.nextLine();
+int a = num.length();
+if(a==10) {
+	System.out.println("Mobile number valid with 10 digits!");
+}
+else {
+	System.out.println("Mobile number not valid !");
+}
+
+//17.password length
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your password:");
+String pass = scan.nextLine();
+int a = pass.length();
+if(a >8) {
+	System.out.println("Valid password!");
+}
+else {
+	System.out.println("Your password should contain more than 8 characters ");
+}
+		
+//18.username 
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your user name:");
+String name1 = scan.nextLine();	
+System.out.println("New username: "+name1.concat("123"));
+
+//19.company name
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your company name:");
+String name1 = scan.nextLine();
+System.out.println(name1.toUpperCase());
+		
+//20.Login vaildation
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your user name:");
+String name1 = scan.nextLine();
+Boolean a = name1.endsWith("@gmail.com");
+if(a==true) {
+	System.out.println("Valid user id!");
+	System.out.print("Enter your password:");
+	String pass = scan.nextLine();
+	int c = pass.length();
+	if(c>8) {
+		System.out.println("Valid password!Login success");
+	}
+	else {
+		System.out.println("Your password should contain more than 8 characters ");
+	}
+}
+else {
+	System.out.println("Invaild user id!Include '@gmail.com'");
+}
+		}
+}
