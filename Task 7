@@ -199,5 +199,102 @@ if(a==true) {
 else {
 	System.out.println("Invaild user id!Include '@gmail.com'");
 }
+//REAL WORLD PROBLEMS
+//1.website url with https
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your website URL:");
+String name1 = scan.nextLine();
+Boolean a = name1.startsWith("https");
+if(a == true) {
+	System.out.println("Your website is secured!");
+}
+else {
+	System.out.println("Your website isn't secured!");
+}
+
+//2.file name pdf
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your file name:");
+String name1 = scan.nextLine();
+Boolean a = name1.endsWith(".pdf");
+if(a == true) {
+	System.out.println("File saved");
+}
+else {
+	System.out.println("Missing of extension .pdf");
+}
+		
+//3.Last index of a
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your  string:");
+String name1 = scan.nextLine();
+System.out.println("Last index of 'a' is:"+name1.lastIndexOf("a"));
+		
+//4.count the vowels 
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your  string:");
+String name1 = scan.nextLine();
+int count = 0;
+int len = name1.length();
+for(int i = 0;i<len;i++) {
+	char s = name1.charAt(i);
+	if(s=='a'||s=='A'||s=='e'||s=='E'||s=='i'||s=='I'||s=='o'||s=='O'||s=='u'||s=='U') {
+		count++;
+	}
+}System.out.println("Total no.of.vowels:"+count);
+
+//5.count no.of.spaces
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your  string:");
+String name1 = scan.nextLine();
+int count = 0;
+int len = name1.length();
+for(int i = 0;i<len;i++) {
+	char s = name1.charAt(i);
+	if(s==' '){
+		count++;
+	}
+}System.out.println("No.of.Spaces:"+count);
+
+//6.display each character
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your  string:");
+String name1 = scan.nextLine();
+int len = name1.length();
+System.out.println("Displaying the characters of string...");
+for(int i = 0;i<len;i++) {
+	char s = name1.charAt(i);
+	System.out.println(s);
+}
+
+//7.reverse the string
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your  string:");
+String name1 = scan.nextLine();
+int len = name1.length();
+String s = "";
+String b = null;
+for(int i = len-1;i>=0;i--) {
+	char a = name1.charAt(i);
+	 b = s+=a;}
+System.out.println("Reversed string:"+b);
+
+//8.palindrome
+Scanner scan = new Scanner(System.in);
+System.out.print("Enter your  string:");
+String name1 = scan.nextLine();
+int len = name1.length();
+String s = "";
+for(int i = len-1;i>=0;i--) {
+	char a = name1.charAt(i);
+	 s+=a;}
+if(s.equalsIgnoreCase(name1)){
+	System.out.println("Palindrome");
+}
+else {
+	System.out.println("Not a palindrome");
+}
+
+
 		}
 }
